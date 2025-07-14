@@ -1,109 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Contact Us</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .contact-header {
-            background-image: url('https://pt.atlasrenewableenergy.com/wp-content/uploads/cloudy-sky-over-the-green-agricultural-field-in-sp-2022-03-16-19-00-56-utc-1030x771-1.jpg');
-            /* Reemplaza con tu imagen */
-            background-size: cover;
-            background-position: center;
-            color: rgb(0, 0, 0);
-            padding: 100px 0;
-            position: relative;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Contactanos</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
 
-        .contact-header h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
-        .divider-line {
-            height: 4px;
-            width: 40px;
-            background-color: orange;
-            margin-bottom: 1rem;
-        }
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
-        .btn-custom {
-            background-color: #007bff;
-            color: white;
-            border-radius: 0;
-            padding: 0.75rem 2rem;
-            font-weight: 600;
-        }
-
-        .card-box {
-            border: 1px solid #ccc;
-            padding: 1.5rem;
-            text-align: center;
-            height: 100%;
-        }
-
-        .form-control {
-            border-radius: 0;
-        }
-
-        .btn-submit {
-            background-color: #007bff;
-            color: white;
-            border-radius: 0;
-            font-weight: 600;
-            padding: 0.75rem 2rem;
-        }
-    </style>
 </head>
 
 <body>
+  <header>
 
-    <!-- Header -->
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Imagen del logo -->
+        <a class="navbar-brand mx-auto d-lg-none" href="#">
+          <img src="img/fotologo.png" alt="Logo" width="60" height="auto">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <a class="navbar-brand d-none d-lg-block me-4" href="#">
+            <img src="img/fotologo.png" alt="Logo" width="60" height="auto">
+          </a>
+
+          <div class="navbar-nav fw-bold text-center">
+            <a class="nav-link px-3 ourheader" href="index.html" target="_blank">Home</a>
+            <a class="nav-link px-3 ourheader" href="energiasrenovables.html" target="_blank">Energías Renovables</a>
+            <a class="nav-link px-3 ourheader" href="produccion.html" target="_blank">Producción a Nivel Mundial</a>
+            <a class="nav-link px-3 ourheader" href="estimacionporcentaje.html" target="_blank">Estimación de Porcentaje</a>
+            <a class="nav-link px-3 ourheader" href="quienessomos.html" target="_blank">Quiénes Somos</a>
+            <a class="nav-link px-3 ourheader" href="contacto.html" target="_blank">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- FIN BARRA DE NAVEGACIÓN-->
+
+  <!-- CONTACTANOS -->
+   <main id="#contactanos">
     <section class="contact-header text-center">
         <div class="container">
             <div class="divider-line mx-auto"></div>
-            <h1>Contáctanos ahora</h1>
+            <h1 id="#contactanos">Contáctanos</h1>
         </div>
     </section>
-
-    <!-- Call to action -->
-    <div class="d-flex justify-content-between align-items-center py-3 px-4" style="background-color: #f8f9fa;">
-        <button class="btn btn-custom">REQUEST A HANDYMAN</button>
-        <span class="fw-bold text-danger">CALL US: 1-800-GOT-DIY2</span>
-    </div>
-
-    <!-- Contact section -->
+ 
     <section class="container py-5">
-        <div class="text-start mb-4">
-            <div class="divider-line"></div>
-            <h2 class="fw-bold">GET IN TOUCH<br><span class="text-uppercase">or request a free quote</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque velit quam et aliquam lorem
-                quis justo.</p>
-        </div>
-
-        <div class="row mb-5">
+            <div class="row mb-5">
             <div class="col-md-4">
                 <div class="card-box">
-                    <h6 class="fw-bold">OUR OFFICE</h6>
-                    <p>2340 San Francisco, CA 94102</p>
-                    <a href="#">DIRECTIONS</a>
+                    <h6 class="fw-bold">DIRECCION</h6>
+                    <a class="ourcontact" href="#" style="text-decoration:none;"><p>2340 San Francisco, CA 94102</p></a>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card-box">
-                    <h6 class="fw-bold">CALL US</h6>
-                    <p>(123) 456-7890</p>
-                    <a href="#">SEND MESSAGE</a>
+                    <h6 class="fw-bold">COMUNICATE CON NOSOTROS</h6>
+                     <a class="ourcontact" href="tel:3124567890" style="text-decoration:none;"><p>(312) 456-7890</p></a>
+                  
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card-box">
                     <h6 class="fw-bold">EMAIL US</h6>
-                    <p>office@example.com</p>
-                    <a href="#">SEND MESSAGE</a>
+                    <a class="ourcontact" href="mailto:contactus@greencode.com" style="text-decoration:none; "><p>contactus@greencode.com</p></a>
                 </div>
             </div>
         </div>
@@ -112,25 +86,82 @@
         <form>
             <div class="row g-3">
                 <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="Name">
+                    <input type="text" class="form-control" placeholder="Nombre">
                 </div>
                 <div class="col-md-6">
-                    <input type="email" class="form-control" placeholder="Email Address">
+                    <input type="email" class="form-control" placeholder="Direccion de correo">
                 </div>
                 <div class="col-12">
-                    <input type="text" class="form-control" placeholder="Subject">
+                    <input type="text" class="form-control" placeholder="Tema">
                 </div>
                 <div class="col-12">
-                    <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                    <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
                 </div>
                 <div class="col-12 text-end">
-                    <button type="submit" class="btn btn-submit">SEND YOUR REQUEST</button>
+                    <button type="submit" class="btn btn-submit">Envia tu Mensaje</button>
                 </div>
             </div>
         </form>
     </section>
+    </main>
+  <!--/ CONTACTANOS -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ <!-- Footer -->
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-md-left">
+      <div class="row text-md-left text-center">
+
+
+        <div class="col-md-3 mb-4">
+          <img src="img/fotologo.png" alt="Logo" width="120">
+        </div>
+
+
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase">Información</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Términos y Condiciones</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Quiénes Somos</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase">Redes Sociales</h5>
+          <a href="https://www.facebook.com/profile.php?id=100065015862378" class="text-white me-3" target="_blank"><i
+              class="bi bi-facebook fs-4"></i><img class="oursocialmedia" src="img/facebook.png" width="40px" height="auto" /></a>
+
+          <a href="https://www.instagram.com/energiasrenovables_pro/?hl=es" class="text-white me-3" target="_blank"><i
+              class="bi bi-instagram fs-4"></i><img class="oursocialmedia" src="img/instagram.png" width="40px" height="auto" /></a>
+
+          <a href="https://www.youtube.com/watch?v=YjGUNt3PL0Q" class="text-white" target="_blank"><i
+              class="bi bi-youtube fs-4"></i><img class="oursocialmedia" src="img/youtube.png" width="40px" height="auto" /></a>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase">Contacto</h5>
+          <a class="ourfooter" href="tel:3151234567" target="_blank" style="display: inline-block; text-decoration:none; color:#ffffff">
+            <p class="mb-0">📞 +57 315 123 45 67</p>
+          </a>
+          <br/>
+          <a class="ourfooter" href="mailto:contacto@greencode.com" style="display: inline-block; text-decoration:none; color:#ffffff">
+            <p> ✉️ contacto@greencode.com</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-3 border-top border-light pt-3">
+      © 2025 Greencode. Todos los derechos reservados.
+    </div>
+  </footer>
+  <!-- FIN FOOTER  -->
+
+
+
+
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 </body>
 
 </html>
