@@ -5,7 +5,7 @@ document.getElementById("formularioEnergia").addEventListener("submit", function
   let consumo = parseFloat(document.getElementById("consumoTotal").value);
 
   // Usar fetch para obtener el JSON de Colombia
-  fetch('../colombia.json')
+  fetch('./colombia.json')
     .then(response => response.json())
     .then(data => {
       // Buscar el año ingresado
