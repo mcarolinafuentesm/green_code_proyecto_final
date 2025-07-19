@@ -51,13 +51,16 @@ document.getElementById('formularioEnergia').addEventListener('submit', function
       const porcentaje = dataAnio.porcentaje;
       const consumoRenovable = (porcentaje / 100) * consumoKwh;
 
-      resultadoDiv.innerHTML = `
-        <div class="alert alert-success fade-container show">
-          En <strong>${pais}</strong> en el año <strong>${anio}</strong>, el <strong>${porcentaje.toFixed(2)}%</strong> de la energía fue renovable.<br>
-          Si consumiste <strong>${consumoKwh.toFixed(2)} kWh</strong>, entonces <strong>${consumoRenovable.toFixed(2)} kWh</strong> provinieron de fuentes limpias.
-        </div>
-      `;
+    resultadoDiv.innerHTML = `
+      <div class="alert alert-success fade-container show text-center mx-auto" style="max-width: 600px;">
+        En <strong>${pais}</strong> en el año <strong>${anio}</strong>, el <strong>${porcentaje.toFixed(2)}%</strong> de la energía fue renovable.<br>
+        Si consumiste <strong>${consumoKwh.toFixed(2)} kWh</strong>, entonces <strong>${consumoRenovable.toFixed(2)} kWh</strong> provinieron de fuentes limpias.
+      </div>
+    `;
 
+
+      // ----- COMENTADO: Se oculta la visualización de la gráfica -----
+      /*
       graficasDiv.style.display = "block";
       setTimeout(() => graficasDiv.classList.add("show"), 50);
 
@@ -101,6 +104,8 @@ document.getElementById('formularioEnergia').addEventListener('submit', function
           }
         }
       });
+      */
+      // -------------------------------------------------------------
     })
     .catch(error => {
       document.getElementById('resultado').innerHTML =
@@ -109,7 +114,7 @@ document.getElementById('formularioEnergia').addEventListener('submit', function
     });
 });
 
-// Observer para animación fade-in y fade-out
+// Observer para animación fade-in y fade-out (opcional si ya no hay gráficas visibles)
 const fadeElements = [
   document.getElementById('tituloBarras'),
   document.getElementById('contenedorGraficas')
