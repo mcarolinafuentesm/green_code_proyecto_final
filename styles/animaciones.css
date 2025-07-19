@@ -1,0 +1,8 @@
+.fade-in-out {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.fade-in-out.visible {
+  opacity: 1;
+}
