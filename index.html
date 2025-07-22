@@ -2,9 +2,11 @@
 <html lang="es">
 
 <head>
-  <title>HOME</title>
-  <!-- Para el FAVICON -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+ <title>HOME</title>
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <!--/ FAVICON -->
+
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -19,9 +21,9 @@
 <body>
   <header>
     <!-- BARRA DE NAVEGACIÓN -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-fixed">
       <div class="container-fluid">
-        <!-- Imagen del logo -->
+        <!-- Logo Image and Navbar for MOBILE -->
         <a class="navbar-brand mx-auto d-lg-none" href="#">
           <img src="img/fotologo.png" alt="Logo" width="160" height="auto">
         </a>
@@ -31,32 +33,41 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+
+        <!-- Logo Image and Navbar for DESKTOP -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
           <a class="navbar-brand d-none d-lg-block me-4" href="#">
             <img src="img/fotologo.png" alt="Logo" width="260" height="auto">
           </a>
 
           <div class="navbar-nav fw-bold text-center">
-            <a class="nav-link px-3 ourheader" href="index.html">Home</a>
-            <a class="nav-link px-3 ourheader" href="energiasrenovables.html">Energías Renovables</a>
-            <a class="nav-link px-3 ourheader" href="produccion.html">Producción a Nivel Mundial</a>
-            <a class="nav-link px-3 ourheader" href="estimacionporcentaje.html">Estimación de
-              Porcentaje</a>
-            <a class="nav-link px-3 ourheader" href="quienessomos.html">Quiénes Somos</a>
-            <a class="nav-link px-3 ourheader" href="contacto.html">Contacto</a>
+            <a class="nav-link px-3 ourheader" href="index.html" style="text-transform:uppercase">Home</a>
+            <a class="nav-link px-3 ourheader" href="energiasrenovables.html" style="text-transform:uppercase">Energías
+              Renovables</a>
+            <a class="nav-link px-3 ourheader" href="dashboard.html" style="text-transform:uppercase">Dashboard</a>
+            <a class="nav-link px-3 ourheader" href="produccion.html" style="text-transform:uppercase">Producción a
+              Nivel Mundial</a>
+            <a class="nav-link px-3 ourheader" href="estimacionporcentaje.html"
+              style="text-transform:uppercase">Estimación de Porcentaje</a>
+            <a class="nav-link px-3 ourheader" href="quienessomos.html" style="text-transform:uppercase">Quiénes
+              Somos</a>
+            <a class="nav-link px-3 ourheader" href="contacto.html" style="text-transform:uppercase">Contacto</a>
           </div>
         </div>
       </div>
     </nav>
+    <!--/ BARRA DE NAVEGACIÓN -->
   </header>
+
+
+
   <main>
     <section class="contact-header text-center">
       <div class="container">
-        <div class="divider-line mx-auto fs-2r"></div>
-        <h1>RESEÑA HISTÓRICA</h1>
+        <div class="divider-line mx-auto"></div>
+        <h1 class="fs-2rem">RESEÑA HISTÓRICA</h1>
       </div>
     </section>
-    <br>
     <br>
     <br>
 
@@ -333,7 +344,7 @@
     </div>
 
     <div class="text-center mt-3 border-top border-light pt-3">
-      © 2025 Greencode. Todos los derechos reservados.
+      © 2025 Greencode. <br>Todos los derechos reservados.
     </div>
   </footer>
   <!--/ FOOTER -->

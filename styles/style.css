@@ -120,6 +120,14 @@
   padding: 0.75rem 2rem;
 }
 
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030; /* mayor que el default de Bootstrap para asegurar que quede arriba */
+}
+
 
 
 
@@ -139,7 +147,8 @@
   .timeline-item::after {
     display: none;
   }
-  .fs-2r {
-  font-size: 2rem;
+
+  .fs-2rem {
+  font-size: 2rem !important;
 }
 }
