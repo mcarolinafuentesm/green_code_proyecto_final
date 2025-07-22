@@ -7,7 +7,7 @@ document.getElementById('formularioEnergia').addEventListener('submit', function
   const anio = parseInt(document.getElementById('anio').value);
   const consumoKwh = parseFloat(document.getElementById('consumoTotal').value);
 
-  fetch('data/01 renewable-share-energy.csv')
+  fetch('data/01_renewable-share-energy.csv')
     .then(response => response.text())
     .then(csvText => {
       const lines = csvText.split('\n');

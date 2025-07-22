@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gráfica Energía Renovable</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .contenedor {
+      display: flex;
+      height: 100vh;
+    }
+    .menu {
+      width: 260px;
+      padding: 20px;
+      border-right: 1px solid #ccc;
+      overflow-y: auto;
+    }
+    .menu h3 {
+      margin-top: 0;
+    }
+    .grafica {
+      flex-grow: 1;
+      padding: 20px;
+    }
+    .checkbox-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <!-- Menú lateral -->
+    <div class="menu">
+      <h3>Selecciona países</h3>
+      <div id="menu-paises" class="checkbox-list"></div>
+      <hr>
+      <label>
+        <input type="checkbox" id="promedio-global" />
+        <strong>Promedio Global</strong>
+      </label>
+    </div>
+
+    <!-- Gráfica -->
+    <div class="grafica">
+      <canvas id="grafica-renovable" width="1000" height="500"></canvas>
+    </div>
+  </div>
+
+  <script src="js/grafica.js"></script>
+</body>
+</html>
