@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mapa de Energía Renovable</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <link rel="stylesheet" href="styles/mapa.css"/>
+
+  <!-- Scripts externos -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+  <script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js" defer></script>
+  <script src="js/mapa.js" defer></script>
+</head>
+<body>
+  <h1>Participación de Energías Renovables por País</h1>
+
+  <div class="map-wrapper">
+    <div id="map"></div>
+  </div>
+
+  <div id="tabla-container" style="display:none;">
+    <h2 id="titulo-tabla"></h2>
+    <table id="tabla">
+      <thead>
+        <tr>
+          <th>País</th>
+          <th>Año</th>
+          <th>% Renovables</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</body>
+</html>
