@@ -1,5 +1,32 @@
 let barChart;
 
+// === CARGAR PAISES AL DATALIST ===
+fetch('data/01_renewable-share-energy.csv')
+  .then(response => response.text())
+  .then(csvText => {
+    const lines = csvText.split('\n');
+    const headers = lines[0].split(',');
+
+    const entityIdx = headers.indexOf('Entity');
+    const paisesUnicos = new Set();
+
+    for (let i = 1; i < lines.length; i++) {
+      const row = lines[i].split(',');
+      const pais = row[entityIdx]?.trim();
+      if (pais) paisesUnicos.add(pais);
+    }
+
+    // Ordenar alfabéticamente y agregar al datalist
+    const listaPaises = document.getElementById('listaPaises');
+    Array.from(paisesUnicos).sort().forEach(pais => {
+      const option = document.createElement('option');
+      option.value = pais;
+      listaPaises.appendChild(option);
+    });
+  })
+  .catch(error => console.error("Error cargando países:", error));
+
+// === EVENTO SUBMIT DEL FORMULARIO ===
 document.getElementById('formularioEnergia').addEventListener('submit', function (event) {
   event.preventDefault();
 
@@ -109,7 +136,7 @@ document.getElementById('formularioEnergia').addEventListener('submit', function
     });
 });
 
-// Observer para animación fade-in y fade-out
+// === ANIMACIONES FADE ===
 const fadeElements = [
   document.getElementById('tituloBarras'),
   document.getElementById('contenedorGraficas')
