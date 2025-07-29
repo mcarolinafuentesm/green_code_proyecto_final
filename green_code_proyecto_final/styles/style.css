@@ -1,0 +1,191 @@
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: black;
+}
+
+.timeline-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.timeline-item {
+  background: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.timeline-item img {
+  width: 80%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 190px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item h4 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.timeline-item p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+}
+
+.ourfooter:hover {
+  font-size: 20px;
+
+}
+
+.ourheader:hover {
+  font-size: 20px;
+}
+
+.ourcontact:hover {
+  font-size: 20px;
+}
+
+.oursocialmedia:hover {
+  width: 60px;
+}
+
+/* Línea horizontal entre elementos */
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  /* mitad del gap */
+  width: 40px;
+  height: 2px;
+  background: #ccc;
+  z-index: -1;
+}
+
+.contact-header {
+  background-image: url('https://pt.atlasrenewableenergy.com/wp-content/uploads/cloudy-sky-over-the-green-agricultural-field-in-sp-2022-03-16-19-00-56-utc-1030x771-1.jpg');
+  /* Reemplaza con tu imagen */
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  padding: 100px 0;
+  position: relative;
+}
+
+.contact-header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.divider-line {
+  height: 4px;
+  width: 40px;
+  background-color: orange;
+  margin-bottom: 1rem;
+}
+
+.btn-custom {
+  background-color: #007bff;
+  color: white;
+  border-radius: 0;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+}
+
+.card-box {
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  text-align: center;
+  height: 100%;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.btn-submit {
+  background-color: #007bff;
+  color: white;
+  border-radius: 0;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030; /* mayor que el default de Bootstrap para asegurar que quede arriba */
+}
+
+
+
+
+/* No poner línea en los últimos de cada fila */
+@media (min-width: 1024px) {
+  .timeline-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .timeline-item:nth-child(4n)::after {
+    display: none;
+  }
+}
+
+/* En móvil ocultamos la línea para no crear scroll horizontal */
+@media (max-width: 1023px) {
+  .timeline-item::after {
+    display: none;
+  }
+
+  .fs-2rem {
+  font-size: 2rem !important;
+}
+}
+
+/* Estilos para personalizar Choices.js */
+.choices {
+  margin-bottom: 0;
+}
+
+.choices__inner {
+  background-color: #f8f9fa; /* Un gris muy claro */
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem; /* Bordes redondeados */
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  min-height: auto;
+}
+
+.choices[data-type*="select-one"].is-open .choices__inner {
+  border-radius: 0.375rem 0.375rem 0 0; /* Mantiene redondez arriba al abrir */
+}
+
+.choices__list--dropdown {
+  border-radius: 0 0 0.375rem 0.375rem; /* Bordes redondeados abajo */
+  border: 1px solid #ced4da;
+  border-top: none;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Color del texto de la opción seleccionada */
+.choices__item--selectable {
+    color: #495057;
+}
+
+/* Color al pasar el mouse por encima de una opción */
+.choices__item--choice.is-highlighted {
+  background-color: #0d6efd; /* Azul de Bootstrap */
+  color: white;
+}
